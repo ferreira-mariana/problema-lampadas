@@ -43,7 +43,7 @@ Para saber se a lâmpada 13 fica acesa ou apagada:
 *Main> teste 13
 False
 ```
-Isso significa que a lâmpada 13 fica apagada.
+```False``` significa que a lâmpada 13 fica apagada.
  
 E para saber a quantidade de lâmpadas acesas e apagadas com 10 pessoas passando:
 ```
