@@ -7,6 +7,11 @@ lampadas x = (acesas, x - acesas)
     where acesas = contaAcesas (apaga [1..x] listaTrue)
           listaTrue = replicate x True 
 
+--para testar se a lampada n fica acesa ou apagada depois de passar n pessoas
+teste :: Int -> Bool
+teste n = head (drop (n-1 ) (apaga [1..n] listaTrue))
+    where listaTrue = replicate n True 
+
 
 apaga :: [Int] -> [Bool] -> [Bool] 
 apaga [] [] = []

@@ -37,5 +37,5 @@ Então, podemos testar para um número _n_ de lâmpadas, que retorna a quantidad
 *Main> lampadas 9
 (3,6)
 ```
-Onde ```(3,6)``` é o par (acesas,apagadas), ou seja, 3 lâmpadas acesas e 6 apagadas. 
+Onde ```(3,6)``` é o par (acesas, apagadas), ou seja, 3 lâmpadas acesas e 6 apagadas. 
 
