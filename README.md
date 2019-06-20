@@ -32,10 +32,10 @@ Prelude> :l lampadas.hs
 Ok, modules loaded: Main.
 *Main> 
 ```
-Então, podemos testar um número _n_ de lâmpadas, por exemplo 9:
+Então, podemos testar para um número _n_ de lâmpadas, que retorna a quantidade de lâmpadas acesas e apagadas com _n_ pessoas passando, por exemplo n = 9:
 ```
 *Main> lampadas 9
 (3,6)
 ```
-Onde 3 são as lâmpadas acesas e 6 são as apagadas. 
+Onde ```(3,6)``` é o par (acesas,apagadas), ou seja, 3 lâmpadas acesas e 6 apagadas. 
 
