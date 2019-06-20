@@ -21,7 +21,7 @@ Você deve receber como retorno:
 GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
 Prelude>
 ```
-Agora, compile o programa:
+Então, compile o programa:
 ```
 Prelude> :l lampadas.hs
 ```
@@ -30,12 +30,24 @@ Você deve receber como retorno:
 Prelude> :l lampadas.hs
 [1 of 1] Compiling Main             ( lampadas.hs, interpreted )
 Ok, modules loaded: Main.
-*Main> 
+*Main>
 ```
-Então, podemos testar para um número _n_ de lâmpadas, que retorna a quantidade de lâmpadas acesas e apagadas com _n_ pessoas passando, por exemplo n = 9:
+Agora podemos testar! Temos duas funcões:
+- teste n: retorna se a lâmpada _n_ fica acesa ou apagada depois de passar _n_ pessoas
+- lampadas n: que retorna a quantidade de lâmpadas acesas e apagadas depois de passar _n_ pessoas
+Sendo _n_ a entrada de ambas as funções.
+
+Testando para 13 lâmpadas:
 ```
-*Main> lampadas 9
-(3,6)
+*Main> teste 13
+False
 ```
-Onde ```(3,6)``` é o par (acesas, apagadas), ou seja, 3 lâmpadas acesas e 6 apagadas. 
+Isso significa que a lâmpada 13 fica apagada.
+ 
+E para saber a quantidade de lâmpadas acesas e apagadas com 10 pessoas passando:
+```
+*Main> lampadas 10 
+(3,7)
+```
+Onde ```(3,7)``` é o par (acesas, apagadas), ou seja, 3 lâmpadas acesas e 7 apagadas. 
 
