@@ -32,9 +32,10 @@ Prelude> :l lampadas.hs
 Ok, modules loaded: Main.
 *Main>
 ```
-Agora podemos testar! Temos duas funcões:
+Agora podemos testar! Temos três funcões:
 - teste n: retorna se a lâmpada _n_ fica acesa ou apagada depois de passar _n_ pessoas
 - lampadas n: retorna a quantidade de lâmpadas acesas e apagadas depois de passar _n_ pessoas.
+- lista_lampadas n: retorna uma lista com o estado de cada lâmpada depois de passar n pessoas. 
 
 Sendo _n_ a entrada de ambas as funções.
 
@@ -52,3 +53,9 @@ E para saber a quantidade de lâmpadas acesas e apagadas com 10 pessoas passando
 ```
 Onde ```(3,7)``` é o par (acesas, apagadas), ou seja, 3 lâmpadas acesas e 7 apagadas. 
 
+Para ver a lista com o estado de cada lâmpada até 15:
+```
+*Main> lista_lampadas 15
+[(1,True),(2,False),(3,False),(4,True),(5,False),(6,False),(7,False),(8,False),(9,True),(10,False),(11,False),(12,False),(13,False),(14,False),(15,False)]
+```
+Então a primeira fica acesa, a segunda apagada e assim por diante.

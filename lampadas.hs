@@ -13,6 +13,17 @@ teste n = head (drop (n-1 ) (apaga [1..n] listaTrue))
     where listaTrue = replicate n True 
 
 
+--retorna uma lista com as lampadas ate n dizendo se estao acesas ou apagadas
+lista_lampadas :: Int -> [(Int, Bool)]
+lista_lampadas n = numera_lista [1..n] (apaga [1..n] listaTrue)
+    where listaTrue = replicate n True 
+
+--numera a lista de booleanos para facilitar a leitura
+numera_lista :: [Int] -> [Bool] -> [(Int, Bool)]
+numera_lista [] [] = []
+numera_lista (x:xs) (b:bs) = [(x,b)] ++ numera_lista xs bs
+
+
 apaga :: [Int] -> [Bool] -> [Bool] 
 apaga [] [] = []
 apaga [1] _ = [True]   
@@ -46,10 +57,4 @@ inverteM m (i:is) (b:bs)
 ehMultiplo :: Int -> Int -> Bool
 ehMultiplo x y  = elem x [y,2*y..x]
 
-
---inverte todos os valores de uma lista
---[false, true] vira [true, false]
-inverte :: [Bool] -> [Bool]
-inverte [x] = [not x]
-inverte (x:xs) = [not x] ++ inverte xs
 
