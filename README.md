@@ -35,9 +35,9 @@ Ok, modules loaded: Main.
 Agora podemos testar! Temos três funcões:
 - teste n: retorna se a lâmpada _n_ fica acesa ou apagada depois de passar _n_ pessoas
 - lampadas n: retorna a quantidade de lâmpadas acesas e apagadas depois de passar _n_ pessoas.
-- lista_lampadas n: retorna uma lista com o estado de cada lâmpada depois de passar n pessoas. 
+- lista_lampadas n: retorna uma lista com o estado de cada lâmpada depois de passar _n_ pessoas. 
 
-Sendo _n_ a entrada de ambas as funções.
+Sendo _n_ a entrada das funções.
 
 Para saber se a lâmpada 13 fica acesa ou apagada:
 ```
